@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+}
+
+footer a {
+  color: #f8f9fa;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+.card-img-top {
+  width: 100%;      /* Ensures the image takes the full width of the card */
+  height: 200px;    /* Set a fixed height for all images */
+  object-fit: cover; /* Ensures the image maintains its aspect ratio while covering the space */
+}
