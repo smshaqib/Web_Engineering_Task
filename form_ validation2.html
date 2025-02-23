@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Enhanced HTML Form with Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Sign Up Form</h2>
+        <form id="signupForm" onsubmit="return validateForm()">
+
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <span id="nameError" class="error"></span>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span id="emailError" class="error"></span>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <span id="passwordError" class="error"></span>
+            </div>
+
+            <!-- Dropdown Country-->
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="">Select Country</option>
+                    <option value="USA">United States</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                </select>
+                <span id="countryError" class="error"></span>
+            </div>
+
+            <!-- Gender Radio Buttons -->
+            <div class="form-group radio-group">
+                <label>Gender:</label>
+                <label>
+                    <input type="radio" name="gender" value="Male"> Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="Female"> Female
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="Other"> Other
+                </label>
+            </div>
+
+            <!-- Newsletter Checkbox -->
+            <div class="form-group checkbox-group">
+                <label>
+                    <input type="checkbox" name="newsletter" value="yes"> Subscribe to newsletter
+                </label>
+            </div>
+
+            <!-- Comments Textarea -->
+            <div class="form-group">
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Any additional comments?"></textarea>
+                <span id="commentsError" class="error"></span>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
